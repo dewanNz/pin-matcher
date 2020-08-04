@@ -76,6 +76,9 @@ margin-right: -4px;
 border-radius: 10px;
 cursor: pointer;
 }
+.button:hover{
+    background-color: darkorange;
+}
 .blink-me {
 color: #E0B612;
 }
@@ -103,4 +106,12 @@ color: #E0B612;
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
+}
+#generated-pin{
+    text-align: center;
+    font-size: 22px;
+}
+#inserted-pin{
+    text-align: center;
+    font-size: 22px;
 }
