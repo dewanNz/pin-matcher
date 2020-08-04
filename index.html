@@ -85,7 +85,7 @@
         }
         
         /*submit button*/
-        document.getElementById('inserted-pin').value = "";
+       
             var submitBtn = document.getElementById('submitButton');
             submitBtn.addEventListener('click', function(){
                 var generatedPin = document.getElementById('generated-pin').value;
@@ -93,9 +93,16 @@
                 if (insertedPin === generatedPin && insertedPin.length > 0 && generatedPin.length > 0){
                     var matched = document.getElementById('matched');
                     matched.style.display = 'block';
+                    
+                    document.getElementById('inserted-pin').value = "";
+                    document.getElementById('generated-pin').value = "";
                 } else if (insertedPin !== generatedPin){
                         var mismatched = document.getElementById('mismatched');
                         mismatched.style.display = 'block';
+
+                        document.getElementById('inserted-pin').value = "";
+                        document.getElementById('generated-pin').value = "";
+
                 } else {
                     var matched = document.getElementById('matched');
                     matched.style.display = 'none';
